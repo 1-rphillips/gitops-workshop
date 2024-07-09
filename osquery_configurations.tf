@@ -12,5 +12,5 @@ resource "zentral_osquery_enrollment" "default" {
 
 resource "zentral_osquery_configuration_pack" "default-compliance-checks-jon" {
   configuration_id = zentral_osquery_configuration.default.id
-  pack_id          = zentral_osquery_pack.compliance-checks.id
+  pack_id          = zentral_osquery_pack.compliance-checks-jon.id
 }
