@@ -29,7 +29,7 @@ resource "zentral_osquery_query" "santa-sysext-cc" {
   platforms                = ["darwin"]
   compliance_check_enabled = true
   scheduling = {
-    pack_id             = zentral_osquery_pack.compliance-checks.id,
+    pack_id             = zentral_osquery_pack.compliance-checks-jon.id,
     interval            = var.osquery_default_compliance_check_interval,
     log_removed_actions = false,
     snapshot_mode       = true
