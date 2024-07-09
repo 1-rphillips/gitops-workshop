@@ -46,3 +46,14 @@ resource "zentral_monolith_manifest_sub_manifest" "default-browsers" {
   manifest_id     = zentral_monolith_manifest.default.id
   sub_manifest_id = zentral_monolith_sub_manifest.browsers.id
 }
+
+resource "zentral_monolith_manifest_sub_manifest" "default-videoconf" {
+  manifest_id     = zentral_monolith_manifest.default.id
+  sub_manifest_id = zentral_monolith_sub_manifest.videoconf.id
+}
+
+resource "zentral_monolith_manifest_sub_manifest" "default-apps" {
+  manifest_id     = zentral_monolith_manifest.default.id
+  sub_manifest_id = zentral_monolith_sub_manifest.apps.id
+
+}
