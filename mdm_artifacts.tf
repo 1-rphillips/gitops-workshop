@@ -153,3 +153,17 @@ resource "zentral_mdm_profile" "system-logging-1" {
   macos       = true
   version     = 1
 }
+
+resource "zentral_mdm_artifact" "mscp-safari" {
+  name      = "mSCP - Safari"
+  type      = "Profile"
+  channel   = "Device"
+  platforms = ["macOS"]
+}
+
+resource "zentral_mdm_profile" "mscp-safari-1" {
+  artifact_id = zentral_mdm_artifact.mscp-safari.id
+  source      = filebase64("${path.module}/mobileconfigs/com.apple.Safari.mobileconfig")
+  macos       = true
+  version     = 1
+}
