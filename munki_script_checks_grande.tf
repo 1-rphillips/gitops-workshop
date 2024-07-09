@@ -1,4 +1,4 @@
-resource "zentral_munki_script_check" "mcs-auditing-audit_acls_files_configure" {
+resource "zentral_munki_script_check" "mcs-auditing-audit_acls_files_configure-grande" {
   name = "[mSCP - Grande] - Auditing - Configure Audit Log Files to Not Contain Access Control Lists"
   description = trimspace(<<EODESC
 The audit log files _MUST_ not contain access control lists (ACLs).
