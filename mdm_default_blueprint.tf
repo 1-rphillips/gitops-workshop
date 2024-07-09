@@ -68,3 +68,9 @@ resource "zentral_mdm_blueprint_artifact" "system-logging" {
   artifact_id  = zentral_mdm_artifact.system-logging.id
   macos        = true
 }
+
+resource "zentral_mdm_blueprint_artifact" "mscp-safari" {
+  blueprint_id = zentral_mdm_blueprint.default.id
+  artifact_id  = zentral_mdm_artifact.mscp-safari.id
+  macos        = true
+}
